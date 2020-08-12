@@ -71,7 +71,7 @@ html{
       height:100%;
       display: flex;
       justify-content: space-around;
-      padding:0 auto;
+      padding-top:10%;
     }
     .right{
       width:45%;
@@ -110,3 +110,57 @@ img{
         text-align: center;
         background-color: lightgray;
     }
+
+/* media styles begin here*/
+/* styles for tablet at 800px*/
+@media (max-width:800px){
+
+  .topRow, .bottomRow{
+    margin-left: 8%;
+  }
+}
+
+/* styles for phone at 500px*/
+@media (max-width:500px){
+
+  /*header styles*/
+  .top{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
+  }
+  button{
+    width:30%;
+  }
+  .textHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32%;
+  }
+  .left{
+    width: 100%;
+    padding:0;
+  }
+  .right{
+    padding-bottom: 45%;
+    align-items: center;
+    width:80%;
+  }
+  .text{
+    text-align: center;
+  }
+  }
+  .text h3{
+    width: 100%;
+  }
+  /*Photo section begins*/
+  .topRow, .bottomRow{
+    flex-wrap: wrap;
+    padding-left: 3%;
+  }
+  .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8{
+    width: 47%;
+  }
+}
